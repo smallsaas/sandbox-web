@@ -1,4 +1,7 @@
 # sandbox-web
+```
+curl -sL https://raw.githubusercontent.com/smallsaas/sandbox/master/tag/web/docker-run.sh | bash -
+```
 
 ### 克隆部署编排仓库 `sandbox-web`
 登录服务器[预安装docker环境](https://github.com/kequandian/dev_docs/blob/master/ops/%E5%9F%BA%E4%BA%8ECentOS%E7%B3%BB%E7%BB%9F%E7%9A%84docker%E5%AE%B9%E5%99%A8%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4.md)
