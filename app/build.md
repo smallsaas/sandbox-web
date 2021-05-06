@@ -1,22 +1,15 @@
 ## sandbox-web
-
+> 通过代码直接构建
 
 #### 克隆部署仓库
 ```
 git clone --depth 1 https://github.com/smallsaas/sandbox-web.git --single-branch web
 ```
 
-#### 准备 dist
-把构建好的dist放至 `web` 目录下 (替换原dist/)
-```
-$ ls web
-dist/
-Dockerfile
-docker-compose.yml
-```
-
 #### 构建并运行
+> 进入 `app` 目录, 基于源代码进行构建
 ```
+cd app
 docker-compose up --build --detach
 ```
 
@@ -27,9 +20,3 @@ docker-compose up --build --detach
 
 #### 变更端口
 替换 `docker-compose.yml` 里定义默认 `8000` 端口即可
-
-
-#### 一键运行
-```
-curl -OL https://raw.githubusercontent.com/smallsaas/sandbox/master/tag/web/docker-run.sh | bash -
-```
