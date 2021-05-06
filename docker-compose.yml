@@ -1,14 +1,11 @@
 version: "3.4"
 services:
   web:
-    image: daocloud.io/library/nginx:latest
-    privileged: true
-    volumes:
-      - ./dist:/usr/share/nginx/html
+    image: web:test
+    container_name: web_test
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     ports: 
       - 8000:80
 
-networks:
-  default:
-    external:
-      name: sandbox_network
