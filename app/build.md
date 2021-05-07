@@ -10,7 +10,9 @@ git clone --depth 1 https://github.com/smallsaas/sandbox-web.git --single-branch
 > 进入 `app` 目录, 基于源代码进行构建
 ```
 cd app
-docker-compose up --build --detach
+COMPOSE_DOCKER_CLI_BUILD=1 docker-compose up --build --detach
+# or
+# sh build.sh
 ```
 
 #### 访问
